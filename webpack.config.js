@@ -10,6 +10,7 @@ module.exports = {
   },
   resolve: {
     extensions: ['.js', '.jsx', '.json', '.css']
+
   },
   module : {
     rules : [

@@ -34,3 +34,8 @@ https://stackoverflow.com/questions/48304441/semantic-ui-react-how-to-theme-usin
 https://stackoverflow.com/questions/42060243/invalid-configuration-object-webpack-has-been-initialised-using-a-configuration
 
 https://react.semantic-ui.com/introduction
+
+
+Notice:
+
+'loaders' is now 'rules' in webpack.config.js

@@ -4,7 +4,7 @@
   "description": "KevinHaro.com, Kevin Haro's personal website and reactjs project.",
   "main": "index.js",
   "scripts": {
-    "dev": "webpack -d --watch",
+    "dev": "webpack -d --watch --hot",
     "start": "node ./server/index.js",
     "build": "webpack -p",
     "react-dev": "webpack -d --watch",
