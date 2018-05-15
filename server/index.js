@@ -3,6 +3,7 @@ const bodyParser = require('body-parser');
 const PORT = process.env.PORT || 8080;
 const path = require('path');
 const app = express();
+//require('../semantic/src/semantic.less');
 app.use(bodyParser.json());
 app.use(express.static(`${__dirname}/../react-client/dist`));
 app.get('*', (req, res) => {

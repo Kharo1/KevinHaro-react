@@ -12,8 +12,8 @@ module.exports = {
     extensions: ['.js', '.jsx', '.json', '.css']
 
   },
-  module : {
-    rules : [
+  module: {
+    rules: [
       {
         test: /\.css$/,
         loader: 'style-loader!css-loader'
@@ -27,12 +27,20 @@ module.exports = {
         loader: 'file-loader'
       },
       {
-        test : /\.jsx?/,
-        include : SRC_DIR,
-        loader : 'babel-loader',      
+        test: /\.jsx?/,
+        include: SRC_DIR,
+        loader: 'babel-loader',
         query: {
           presets: ['react', 'es2015']
-       }
+        }
+      },
+      {
+        test: /\.less$/,
+        loader: 'style-loader!css-loader!less-loader'
+      },
+      {
+        test: /\.(png|woff|woff2|eot|ttf|svg)$/,
+        loader: 'url-loader?limit=100000'
       }
     ]
   },
